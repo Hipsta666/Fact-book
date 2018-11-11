@@ -7,11 +7,11 @@ while back == "н":
         print("Такого файла не существует, выбирайте из доступных.")
 
     try:
-        if file_selected == "Мне нравится" and "мне нравится":
+        if file_selected == "Мне нравится":
             with open("My.txt", "r+") as my_file_1:
                 text_1 = my_file_1.read()
                 print(text_1, "\n")
-                text_copy_1 = input('Введите текст, который '
+                text_copy_1 = input('Введите строку, которую '
                 'вы хотите добавить в "Факты": ')
                 text_copy_1 = text_copy_1 + "\n"
                 if text_copy_1 not in text_1:
@@ -33,7 +33,7 @@ while back == "н":
             with open("facts.txt", "r+") as my_file_2:
                 text_2 = my_file_2.read()
                 print(text_2, "\n")
-                text_copy_2 = input('Введите текст, который вы хотите '
+                text_copy_2 = input('Введите строку, которую вы хотите '
                                     'добавить в "Мне нравится": ')
                 text_copy_2 = text_copy_2 + "\n"
                 if text_copy_2 not in text_2:
